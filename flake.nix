@@ -223,7 +223,12 @@
           };
         in
         selectSystem {
-          nixosSystem = import "${finalNixpkgs}/nixos/lib/eval-config.nix" args';
+          nixosSystem = nixpkgs.lib.nixosSystem (
+            args'
+            // {
+              pkgs = finalPkgs;
+            }
+          );
           darwinSystem = nix-darwin.lib.darwinSystem (
             args'
             // {
