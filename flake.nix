@@ -223,7 +223,7 @@
           };
         in
         selectSystem {
-          nixosSystem = finalNixpkgs.nixpkgs.lib.nixosSystem (
+          nixosSystem = nixpkgs.lib.nixosSystem (
             args'
             // {
               pkgs = finalPkgs;

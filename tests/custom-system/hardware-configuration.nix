@@ -2,6 +2,7 @@
 
 {
   fileSystems."/" = {
+    fsType = "ext4";
     device = "nodev";
   };
 

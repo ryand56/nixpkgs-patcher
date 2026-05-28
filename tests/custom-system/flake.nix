@@ -1,9 +1,9 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/dd90a8666b501e6068a1d56fe6f0b1da85ccac06";
+    nixpkgs.url = "github:NixOS/nixpkgs/b9bdc44a01c2eadb8da35af94d707f11755e848f";
     nixpkgs-patcher.url = "../..";
     nixpkgs-patch-git-review-bump = {
-      url = "https://github.com/NixOS/nixpkgs/pull/410328.diff?full_index=1";
+      url = "https://github.com/NixOS/nixpkgs/pull/522850.diff?full_index=1";
       flake = false;
     };
   };
