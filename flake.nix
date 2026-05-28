@@ -223,12 +223,7 @@
           };
         in
         selectSystem {
-          nixosSystem = nixpkgs.lib.nixosSystem (
-            args'
-            // {
-              pkgs = finalPkgs;
-            }
-          );
+          nixosSystem = nixpkgs.lib.nixosSystem args';
           darwinSystem = nix-darwin.lib.darwinSystem (
             args'
             // {
